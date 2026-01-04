@@ -3,46 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code2Console | Build & Publish Your Apps</title>
+    <title>Code2Console | Professional App Publishing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; color: #333; }
-        header { background: #1a73e8; color: white; padding: 60px 20px; text-align: center; }
-        h1 { margin: 0; font-size: 3em; }
-        .container { max-width: 900px; margin: auto; padding: 20px; }
-        .features { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 40px; }
-        .feature-box { background: #f4f4f4; padding: 20px; border-radius: 10px; width: 30%; min-width: 250px; margin: 10px; text-align: center; }
-        .cta-button { display: inline-block; background: #ff9900; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
-        footer { text-align: center; padding: 40px; background: #222; color: white; margin-top: 50px; }
+        body { font-family: 'Poppins', sans-serif; margin: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; }
+        
+        /* Navigation */
+        nav { background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #1a73e8; }
+        
+        /* Hero Section */
+        header { background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 100px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 3.5em; letter-spacing: -1px; }
+        header p { font-size: 1.2em; opacity: 0.9; margin: 20px 0; }
+        
+        /* Features */
+        .container { max-width: 1100px; margin: auto; padding: 50px 20px; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .features { display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .feature-box { background: white; padding: 30px; border-radius: 15px; width: 28%; min-width: 280px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; text-align: center; border-bottom: 5px solid #1a73e8; }
+        .feature-box:hover { transform: translateY(-10px); }
+        .feature-box h3 { color: #1a73e8; }
+
+        /* Contact Section */
+        .cta-section { background: #fff; padding: 60px 20px; text-align: center; border-radius: 20px; margin: 40px auto; max-width: 800px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .cta-button { display: inline-block; background: #25d366; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1em; transition: 0.3s; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); }
+        .cta-button:hover { background: #128c7e; transform: scale(1.05); }
+
+        footer { text-align: center; padding: 50px; background: #111; color: #888; margin-top: 50px; }
+        
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5em; }
+            .feature-box { width: 100%; }
+        }
     </style>
 </head>
 <body>
 
+<nav>
+    <div class="logo">Code2Console</div>
+    <div class="contact-info">Tamil Nadu, India</div>
+</nav>
+
 <header>
     <h1>Code2Console</h1>
-    <p>நாங்கள் உங்கள் கனவு ஆப்பை உருவாக்கி Google Play Store-ல் வெளியிடுகிறோம்!</p>
-    <a href="https://wa.me/YOURNUMBER" class="cta-button">இப்போதே பேசலாம் (WhatsApp)</a>
+    <p>நாங்கள் உங்கள் ஐடியாவை (Idea) ஒரு வெற்றிகரமான மொபைல் ஆப்பாக மாற்றுகிறோம்.</p>
+    <p>Flutter | Gemini AI | Google Play Store Publishing</p>
+    <a href="https://wa.me/918122811489?text=Hi%20Code2Console,%20I%20want%20to%20discuss%20an%20app%20project." class="cta-button">எங்களுடன் வாட்ஸ்அப்பில் இணையுங்கள் 💬</a>
 </header>
 
 <div class="container">
-    <h2 style="text-align:center;">எங்கள் சேவைகள்</h2>
+    <div class="section-title">
+        <h2>எங்கள் சேவைகள் (Our Services)</h2>
+        <p>முழுமையான டெவலப்மெண்ட் மற்றும் பப்ளிஷிங் தீர்வுகள்</p>
+    </div>
+    
     <div class="features">
         <div class="feature-box">
-            <h3>📱 App Building</h3>
-            <p>Flutter மற்றும் Gemini AI பயன்படுத்தி அதிநவீன ஆப்கள் உருவாக்கம்.</p>
+            <h1 style="font-size: 40px;">📱</h1>
+            <h3>Custom App Design</h3>
+            <p>ஜுவல்லரி ஷாப் மற்றும் சிறு வணிகங்களுக்கென பிரத்யேகமான, அழகான ஆப் டிசைன்கள்.</p>
         </div>
         <div class="feature-box">
-            <h3>🚀 Play Store Publish</h3>
-            <p>14-நாள் டெஸ்டிங் முதல் வெற்றிகரமான வெளியீடு வரை அனைத்து பொறுப்பும் எங்களுடையது.</p>
+            <h1 style="font-size: 40px;">⚙️</h1>
+            <h3>API 35 Updates</h3>
+            <p>புதிய ஆண்ட்ராய்டு 15 விதிமுறைகளின்படி உங்கள் பழைய ஆப்புகளை அப்டேட் செய்து தருகிறோம்.</p>
         </div>
         <div class="feature-box">
-            <h3>💎 Specialized for Shops</h3>
-            <p>ஜுவல்லரி மற்றும் சிறு வணிகங்களுக்கான பிரத்யேக வசதிகள்.</p>
+            <h1 style="font-size: 40px;">🚀</h1>
+            <h3>Play Store Success</h3>
+            <p>12 டெஸ்டர்கள் மற்றும் 14 நாள் விதிகளை நாங்களே கவனித்து ஆப்பை நேரலை செய்கிறோம்.</p>
         </div>
+    </div>
+
+    <div class="cta-section">
+        <h3>உங்களுக்கு ஒரு ஆப் தேவையா?</h3>
+        <p>இலவச ஆலோசனைக்கு இன்றே எங்களை அழைக்கவும். உங்கள் வணிகத்தை அடுத்த கட்டத்திற்கு கொண்டு செல்லுங்கள்.</p>
+        <a href="mailto:sathishsdevand@gmail.com" style="color: #1a73e8; font-weight: bold; text-decoration: none;">sathishsdevand@gmail.com</a>
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2026 Code2Console. All Rights Reserved.</p>
+    <p>&copy; 2026 Code2Console | Built with Flutter & Gemini Spirit</p>
+    <p style="font-size: 0.8em;">Based in Chennai, serving worldwide.</p>
 </footer>
 
 </body>
